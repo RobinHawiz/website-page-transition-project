@@ -5,7 +5,210 @@
           box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+body {
+  background: #17181a;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+section .hero-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
+  padding-left: 5rem;
+  position: relative;
+}
+
+section .hero-desc h2 {
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+section .hero-desc p {
+  padding: 3rem 0rem;
+  font-size: 1.5rem;
+  color: #dfdfe9;
+}
+
+section .hero-desc .explore {
+  padding: 1rem 2rem;
+  border: 1px solid white;
+  font-size: 1rem;
+  text-decoration: none;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  cursor: pointer;
+}
+
+section .hero-img {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 25rem;
+      flex-basis: 25rem;
+}
+
+section .hero-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section .fashion-span {
+  color: #ff8b5d;
+}
+
+section .mountain-span {
+  color: #567ce4;
+}
+
+section .hike-span {
+  color: #a76ee7;
+}
+
+section .reveal-img,
+section .reveal-text {
+  position: absolute;
+  background: #17181a;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.nav-header {
+  min-height: 10vh;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0rem;
+}
+
+.nav-header #logo {
+  color: white;
+  font-family: "Abril Fatface", sans-serif;
+  font-weight: 400;
+}
+
+.nav-header .burger {
+  cursor: pointer;
+}
+
+.nav-header .burger .line1,
+.nav-header .burger .line2 {
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: white;
+  cursor: none;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+  opacity: 1;
+  -webkit-clip-path: circle(50px at 100% -10%);
+          clip-path: circle(50px at 100% -10%);
+}
+
+.nav-bar .nav-links {
+  font-size: 4rem;
+  -ms-flex-preferred-size: 30rem;
+      flex-basis: 30rem;
+}
+
+.nav-bar .nav-links h3 {
+  padding: 3rem 0rem;
+}
+
+.nav-bar .contact {
+  -ms-flex-preferred-size: 30rem;
+      flex-basis: 30rem;
+}
+
+.nav-bar .contact h2 {
+  font-size: 5rem;
+  padding: 2rem 0rem;
+}
+
+.nav-bar .contact p {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

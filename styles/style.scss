@@ -1,1 +1,10 @@
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
 @import "globals";
+@import "header";
+@import "navbar";
