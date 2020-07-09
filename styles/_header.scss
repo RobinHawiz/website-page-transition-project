@@ -6,6 +6,9 @@
   width: 80%;
   margin: auto;
   padding: 2rem 0rem;
+  position: relative;
+  z-index: 2;
+
   #logo {
     color: white;
     font-family: "Abril Fatface", sans-serif;
@@ -20,6 +23,7 @@
       margin: 0.4rem;
       background: white;
       cursor: none;
+      pointer-events: none;
     }
   }
 }
